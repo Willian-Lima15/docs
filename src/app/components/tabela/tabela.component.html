@@ -1,0 +1,9 @@
+<table>
+  <tr *ngFor="let dadosLinha of dados">
+    <td *ngFor="let coluna of colunas">
+      <ng-template
+        *ngTemplateOutlet="coluna; context:{dadosLinha}">
+      </ng-template>
+    </td>
+  </tr>
+</table>
